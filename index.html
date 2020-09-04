@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>My Test Subhash</title>
+<link rel="stylesheet" media="screen" href="style.css" />
+
+</head>
+<body>
+
+<div id="result-iframe-wrap" role="main">
+<iframe id="result" srcdoc="
+
+  
+  
+  
+<style>
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  background-attachment: fixed;
+  background-size: cover;
+  color: #0e0d0d;
+  font-family: &quot;Open Sans&quot;;
+  height: 100%;
+  width: 100%;
+}
+body input,
+body textarea {
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+#root .container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+#root .search-outer {
+  margin: 50px 0 35px;
+  text-align: center;
+}
+#root .search-outer .searchform {
+  display: inline-block;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+#root .search-outer .searchform input {
+  outline: medium none;
+}
+#root .search-outer .searchform input[type=&quot;search&quot;] {
+  background-color: transparent;
+  border: medium none;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #dadbdb;
+  border-radius: 0;
+  box-sizing: content-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 100%;
+  margin-bottom: 0;
+  padding: 3px 0;
+  transition: all 0.5s ease 0s;
+  max-width: 300px;
+  width: calc(100% - 15px);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* clears the 'X' from Internet Explorer */
+  /* clears the 'X' */
+}
+#root .search-outer .searchform input[type=&quot;search&quot;]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+#root .search-outer .searchform input[type=&quot;search&quot;]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+#root .search-outer .searchform input[type=&quot;search&quot;]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+#root .search-outer .searchform input[type=&quot;search&quot;]::-webkit-search-decoration, #root .search-outer .searchform input[type=&quot;search&quot;]::-webkit-search-cancel-button, #root .search-outer .searchform input[type=&quot;search&quot;]::-webkit-search-results-button, #root .search-outer .searchform input[type=&quot;search&quot;]::-webkit-search-results-decoration {
+  display: none;
+}
+#root .search-outer .searchform input[type=&quot;search&quot;]:focus {
+  background-color: transparent;
+  color: #fff;
+  cursor: auto;
+  padding: 3px 0;
+}
+#root .search-outer .searchform:hover input[type=&quot;search&quot;] {
+  background-color: transparent;
+  color: #ffffff;
+  cursor: auto;
+  padding: 3px 0;
+}
+#root .search-outer button[type=&quot;submit&quot;] {
+  background-color: rgba(0, 0, 0, 0);
+  border: medium none;
+  color: #fff;
+  cursor: pointer;
+  height: 30px;
+  line-height: 1;
+  float: right;
+  font-size: 1em;
+  pointer-events: none;
+  width: auto;
+  z-index: 1000000000;
+}
+#root .search-outer .fa-search {
+  padding-left: 0;
+  padding-right: 0;
+}
+#root ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.5);
+}
+#root ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.5);
+}
+#root :-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(255, 255, 255, 0.5);
+}
+#root :-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.5);
+}
+#root .data-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 0px;
+}
+img {
+    width: 100%;
+}
+.title h5 {
+    padding: 3% 1%;
+	border-bottom: 1px solid;
+}
+#root .data-list:after {
+  content: &quot;&quot;;
+}
+#root .data-list:after,
+#root .data-list li {
+  width: calc(33.33% - 10px);
+}
+#root .data-list li {
+  background: #151313;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 30px;
+  border: 1px solid #ada5a5;
+  box-shadow: 3px 2px #888888;
+}
+#root .data-list li .title {
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+#root .data-list li .link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .data-list:after,
+  .data-list li {
+    width: calc(50% - 8px);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .data-list:after,
+  .data-list li {
+    width: 100%;
+  }
+}
+header {
+  background-color: #666;
+  padding: 1px;
+  text-align: center;
+  font-size: 10px;
+  color: red;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 1000px;
+  /* only for demonstration, should be removed */
+  background: #2d2222;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  color:#fff;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+  color: blue;
+  /* only for demonstration, should be removed */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+button {
+  margin-left: 10px;
+  margin-top: 10px;
+  background: #fff;
+  padding: 10px 20px;
+  border: none;
+}
+</style>
+
+  
+
+
+
+  <div id=&quot;root&quot;></div>
+    
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.production.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.production.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js'></script>
+  
+      <script id=&quot;rendered-js&quot; >
+function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} //URL = &quot;https://api.spacexdata.com/v3/launches?limit=10&quot;; // URL variable stores JSON url || API taken from 10 Degrees WordPress Agency
+URL = &quot;https://api.spaceXdata.com/v3/launches?limit=100&amp;amp;launch_success=true&quot;;
+
+class App extends React.Component {constructor(...args) {super(...args);_defineProperty(this, &quot;state&quot;,
+    {
+      post: [],
+      allPosts: [] });_defineProperty(this, &quot;_onKeyUp&quot;,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    e => {
+      // filter post list by title using onKeyUp function
+      const post = this.state.allPosts.filter((item) =>
+      item.mission_name.toLowerCase().includes(e.target.value.toLowerCase()));
+
+      this.setState({ post });
+    });_defineProperty(this, &quot;_filterByYear&quot;,
+
+    year => {
+      const post = this.state.allPosts.filter((item) =>
+      item.launch_year === year);
+
+      this.setState({ post });
+    });_defineProperty(this, &quot;_filterByLaunch&quot;,
+    launch => {
+      const post = this.state.allPosts.filter((item) =>
+      item.launch_success === launch);
+
+      this.setState({ post });
+    });_defineProperty(this, &quot;_filterByLanding&quot;,
+    landing => {
+      const post = this.state.allPosts.filter((item) =>
+      item.launch_landing === landing);
+
+      this.setState({ post });
+    });}componentDidMount() {axios.get(URL, { headers: { Accept: &quot;application/json&quot;, &quot;Content-Type&quot;: &quot;application/json&quot; } }).then(({ data }) => {this.setState({ post: data, allPosts: data // array data from JSON stored in these
+      });}).catch(err => {});}
+
+
+  render() {
+    return (
+
+      React.createElement(&quot;div&quot;, { className: &quot;container-fluid&quot; },
+      React.createElement(&quot;header&quot;, null,
+      React.createElement(&quot;h2&quot;, null, &quot;&quot;)),
+
+      React.createElement(&quot;section&quot;, null,
+      React.createElement(&quot;nav&quot;, null,
+
+
+
+      React.createElement(&quot;ul&quot;, null,
+      React.createElement(&quot;h1&quot;, null, &quot;Filters&quot;),
+      React.createElement(&quot;p&quot;, null, &quot;Launch Year&quot;),
+      React.createElement(&quot;div&quot;, { class: &quot;w3-show-inline-block&quot; },
+      React.createElement(&quot;div&quot;, { class: &quot;w3-bar&quot; },
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2006') }, &quot;2006&quot;),
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2007') }, &quot;2007&quot;))),
+
+
+
+      React.createElement(&quot;div&quot;, { class: &quot;w3-show-inline-block&quot; },
+      React.createElement(&quot;div&quot;, { class: &quot;w3-bar&quot; },
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2008') }, &quot;2008&quot;),
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2009') }, &quot;2009&quot;))),
+
+
+
+      React.createElement(&quot;div&quot;, { class: &quot;w3-show-inline-block&quot; },
+      React.createElement(&quot;div&quot;, { class: &quot;w3-bar&quot; },
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2010') }, &quot;2010&quot;),
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2011') }, &quot;2011&quot;))),
+
+
+
+      React.createElement(&quot;div&quot;, { class: &quot;w3-show-inline-block&quot; },
+      React.createElement(&quot;div&quot;, { class: &quot;w3-bar&quot; },
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2012') }, &quot;2012&quot;),
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2013') }, &quot;2013&quot;))),
+
+
+
+      React.createElement(&quot;div&quot;, { class: &quot;w3-show-inline-block&quot; },
+      React.createElement(&quot;div&quot;, { class: &quot;w3-bar&quot; },
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2014') }, &quot;2014&quot;),
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2015') }, &quot;2015&quot;))),
+
+
+
+      React.createElement(&quot;div&quot;, { class: &quot;w3-show-inline-block&quot; },
+      React.createElement(&quot;div&quot;, { class: &quot;w3-bar&quot; },
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2016') }, &quot;2016&quot;),
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2017') }, &quot;2017&quot;))),
+
+
+
+      React.createElement(&quot;div&quot;, { class: &quot;w3-show-inline-block&quot; },
+      React.createElement(&quot;div&quot;, { class: &quot;w3-bar&quot; },
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2018') }, &quot;2018&quot;),
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2019') }, &quot;2019&quot;))),
+
+
+
+      React.createElement(&quot;div&quot;, { class: &quot;w3-show-inline-block&quot; },
+      React.createElement(&quot;div&quot;, { class: &quot;w3-bar&quot; },
+      React.createElement(&quot;button&quot;, { class: &quot;w3-btn w3-teal&quot;, onClick: () => this._filterByYear('2020') }, &quot;2020&quot;))),
+
+
+
+
+      React.createElement(&quot;br&quot;, null),
+      React.createElement(&quot;p&quot;, null, &quot;Successful Launch&quot;),
+
+      React.createElement(&quot;div&quot;, { class: &quot;w3-show-inline-block&quot; },
+      React.createElement(&quot;div&quot;, { class: &quot;w3-bar&quot; },
+      React.createElement(&quot;button&quot;, { class: &quot;btn btn-success&quot;, onClick: () => this._filterByLaunch(true) }, &quot;true&quot;),
+      React.createElement(&quot;button&quot;, { class: &quot;btn btn-success&quot;, onClick: () => this._filterByLaunch(false) }, &quot;false&quot;))),
+
+
+
+      React.createElement(&quot;br&quot;, null),
+      React.createElement(&quot;p&quot;, null, &quot;Successful Landing&quot;),
+
+      React.createElement(&quot;div&quot;, { class: &quot;w3-show-inline-block&quot; },
+      React.createElement(&quot;div&quot;, { class: &quot;w3-bar&quot; },
+      React.createElement(&quot;button&quot;, { class: &quot;btn btn-success&quot;, onClick: () => this._filterByLanding(true) }, &quot;true&quot;),
+      React.createElement(&quot;button&quot;, { class: &quot;btn btn-success&quot;, onClick: () => this._filterByLanding(false) }, &quot;false&quot;))))),
+
+
+
+
+
+
+      React.createElement(&quot;article&quot;, null,
+      React.createElement(&quot;ul&quot;, { className: &quot;data-list&quot; },
+
+      this.state.post.map((item, index) =>
+      React.createElement(&quot;li&quot;, { className: &quot;block-&quot; + index },
+      React.createElement(&quot;div&quot;, { className: &quot;title&quot; },
+      React.createElement(&quot;img&quot;, { src: item.links.mission_patch_small }),
+      React.createElement(&quot;h3&quot;, null, item.mission_name),
+      React.createElement(&quot;h5&quot;, null, &quot;Mission Ids: &quot;, item.mission_id.length === 0 ? &quot;0&quot; : item.mission_id.map((id, index) => React.createElement(&quot;span&quot;, { key: index }, (index ? ', ' : '') + id))),
+      React.createElement(&quot;h5&quot;, null, &quot;Launch Year: &quot;, item.launch_year),
+      React.createElement(&quot;h5&quot;, null, &quot;Successful Launch: &quot;, item.launch_success ? &quot;True&quot; : &quot;False&quot;),
+      React.createElement(&quot;h5&quot;, null, &quot;Successful Landing: &quot;, item.launch_landing ? &quot;True&quot; : &quot;False&quot;)))))))));
+
+
+
+
+
+
+
+
+
+
+
+
+  }}
+
+
+ReactDOM.render(React.createElement(App, null), document.getElementById(&quot;root&quot;));
+//# sourceURL=pen.js
+    </script>
+
+  
+
+
+">
+      </iframe>
+</div>
+</body>
+</html>
